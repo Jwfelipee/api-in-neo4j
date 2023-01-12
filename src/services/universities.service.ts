@@ -31,7 +31,7 @@ export class UniversityService {
 		};
 	}
 
-	async getById(id: string): Promise<IUniversityOut | undefined> {
+	async getById(id: string): Promise<IUniversity | undefined> {
 		const result = await this.universityRepository.getById(id);
 
 		if (!result) {
@@ -41,12 +41,7 @@ export class UniversityService {
 			};
 		}
 
-		return {
-			_id: result.id,
-			nome: result.name,
-			estado: result['state-province'],
-			país: result.country,
-		};
+		return result;
 	}
 
 	async create(university: Omit<IUniversity, 'id'>): Promise<IUniversityOut> {
