@@ -2,6 +2,7 @@
 
 rotas:
 	- universities:
+###
 			getAll (get)
 				parametros opicionais - 'country' | 'page' | 'quantity_in_page'
 				ex: 
