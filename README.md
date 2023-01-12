@@ -44,7 +44,7 @@ rotas:
 				ex:
 					<domain>/universities/:id
 
-.env 
-	MONGO_PASS=<password>
-	MONGO_USER=<user>
-	MONGO_URL=<url>
+.env:
+	- MONGO_PASS=\password\
+	- MONGO_USER=\user\
+	- MONGO_URL=\url\
