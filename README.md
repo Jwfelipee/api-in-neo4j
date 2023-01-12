@@ -43,3 +43,8 @@ rotas:
 			delete (delete)
 				ex:
 					<domain>/universities/:id
+
+.env 
+	MONGO_PASS=<password>
+	MONGO_USER=<user>
+	MONGO_URL=<url>
