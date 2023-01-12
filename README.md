@@ -19,26 +19,26 @@ rotas:
 			newUniversity (post)
 				ex:
 					<domain>/universities
-						data: {
-								"web_pages": ["web_page test"],
-								"state-province": "Sao Paulo",
-								"alpha_two_code": "SP",
-								"name": "Anhanguera",
-								"country": "Brasil",
-								"domains": ["usp.com.br"]
-						}
+					data: {
+							"web_pages": ["web_page test"],
+							"state-province": "Sao Paulo",
+							"alpha_two_code": "SP",
+							"name": "Anhanguera",
+							"country": "Brasil",
+							"domains": ["usp.com.br"]
+					}
 
 			updateUniversity (put)
 				ex:
 					<domain>/universities/:id
-						data: {
-								"web_pages": ["web_page test"],
-								"state-province": "Sao Paulo",
-								"alpha_two_code": "SP",
-								"name": "Anhanguera",
-								"country": "Brasil",
-								"domains": ["usp.com.br"]
-						}
+					data: {
+							"web_pages": ["web_page test"],
+							"state-province": "Sao Paulo",
+							"alpha_two_code": "SP",
+							"name": "Anhanguera",
+							"country": "Brasil",
+							"domains": ["usp.com.br"]
+					}
 			
 				delete (delete)
 				ex:
