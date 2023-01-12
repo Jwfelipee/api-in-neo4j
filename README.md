@@ -40,6 +40,6 @@ rotas:
 							"domains": ["usp.com.br"]
 					}
 			
-				delete (delete)
+			delete (delete)
 				ex:
 					<domain>/universities/:id
