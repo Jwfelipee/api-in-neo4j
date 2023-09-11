@@ -5,13 +5,14 @@ dotenv.config({
 });
 
 const config = {
-	database: {
-		host: process.env.DB_HOST,
-		port: process.env.DB_PORT,
-		name: process.env.DB_NAME,
-		user: process.env.DB_USER,
-		password: process.env.DB_PASSWORD,
-		url: process.env.DB_URL,
+	neo4j: {
+		uri: process.env.NEO4J_URI,
+		username: process.env.NEO4J_USERNAME,
+		password: process.env.NEO4J_PASSWORD,
+	},
+	aura: {
+		instanceId: process.env.AURA_INSTANCEID,
+		instanceName: process.env.AURA_INSTANCENAME,
 	},
 	server: {
 		port: process.env.SERVER_PORT,
@@ -22,4 +23,4 @@ const config = {
 	},
 };
 
-export default config;
+export { config };

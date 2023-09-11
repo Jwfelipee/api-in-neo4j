@@ -1,5 +1,5 @@
 {
-	"name": "bis2bis",
+	"name": "api-neo4j",
 	"version": "0.0.1",
 	"main": "index.js",
 	"author": "Joao Wictor Felope",
@@ -31,8 +31,7 @@
 		"cron": "^2.0.0",
 		"dotenv": "^16.0.1",
 		"express": "^4.18.1",
-		"mongodb": "^4.13.0",
-		"mongoose": "^6.8.3",
+		"neo4j-driver": "^5.12.0",
 		"winston": "^3.7.2"
 	}
 }
