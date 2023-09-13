@@ -3,20 +3,20 @@
  Como rodar o projeto?
 </p>
 
-```
-Clone o repositório
-- git clone https://github.com/Jwfelipee/api-in-neo4j.git
+```bash
+# Clone o repositório
+git clone https://github.com/Jwfelipee/api-in-neo4j.git
 
-Entre no diretório
-- cd api-in-neo4j
+# Entre no diretório
+cd api-in-neo4j
 
-Instale as dependências
-- npm install ou npm ci
+# Instale as dependências
+npm install ou npm ci
 
-Inicie o servidor
-- npm run dev
+# Inicie o servidor
+npm run dev
 
-Observações
+# Observações
 - certifique-se de ter o node instalado
 ```
 
