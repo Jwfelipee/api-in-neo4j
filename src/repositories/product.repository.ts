@@ -7,7 +7,7 @@ export class ProductRepository {
 
 	async getAll(): Promise<any[]> {
 		const session = this.dbConnection.session();
-		const result = await session.run('MATCH (p:Product) RETURN p');
+		const result = await session.run(`MATCH (p:Product) RETURN p`);
 		const { records } = result;
 		const products = records.map((record) => Product.from(record.get('p').properties));
 		return products;

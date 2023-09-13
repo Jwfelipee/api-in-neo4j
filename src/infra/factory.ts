@@ -16,7 +16,7 @@ export function factory(dbConnection: Driver): IFactoryOut {
 	const productRepository = new ProductRepository(dbConnection);
 	const stockRepository = new StockRepository(dbConnection);
 	const storeRepository = new StoreRepository(dbConnection);
-	const productService = new ProductService(productRepository);
+	const productService = new ProductService(productRepository, storeRepository, stockRepository);
 	const stockService = new StockService(stockRepository);
 	const storeService = new StoreService(storeRepository, stockRepository);
 

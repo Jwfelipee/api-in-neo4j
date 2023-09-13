@@ -10,7 +10,7 @@ stockRoute.get('', async (req, res) => {
 		const stock = await stockService.getAll();
 		res.status(200).send(stock);
 	} catch (error: any) {
-		res.status(error?.code || 500).json({ message: error?.message || 'Internal server error' });
+		res.status(error?.code || 500).json({ error: error?.message || 'Internal server error' });
 	}
 });
 
@@ -21,7 +21,7 @@ stockRoute.post('', async (req, res) => {
 		await stockService.create(stock);
 		res.status(201).send(stock);
 	} catch (error: any) {
-		res.status(error?.code || 500).json({ message: error?.message || 'Internal server error' });
+		res.status(error?.code || 500).json({ error: error?.message || 'Internal server error' });
 	}
 });
 
@@ -31,7 +31,7 @@ stockRoute.delete('/:id', async (req, res) => {
 		await stockService.delete(id);
 		res.status(204).send();
 	} catch (error: any) {
-		res.status(error?.code || 500).json({ message: error?.message || 'Internal server error' });
+		res.status(error?.code || 500).json({ error: error?.message || 'Internal server error' });
 	}
 });
 

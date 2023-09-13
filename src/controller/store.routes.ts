@@ -12,7 +12,7 @@ storeRoute.post('/buy', async (req, res) => {
 		const result = await storeService.buy(storeBuy);
 		res.status(201).send(result);
 	} catch (error: any) {
-		res.status(error?.code || 500).json({ message: error?.message || 'Internal server error' });
+		res.status(error?.code || 500).json({ error: error?.message || 'Internal server error' });
 	}
 });
 

@@ -24,4 +24,17 @@ export class StoreRepository {
 			buyingProcess
 		);
 	}
+
+	async validateProcessByProductId(productId: string): Promise<boolean> {
+		const session = this.dbConnection.session();
+		const result = await session.run(
+			`
+			MATCH (bp:BuyingProcess)-[:BUYING_PROCESS_OF]->(p:Product {id: $productId})
+			RETURN bp
+		`,
+			{ productId }
+		);
+		const { records } = result;
+		return records.length > 0;
+	}
 }
